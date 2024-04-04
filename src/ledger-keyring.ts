@@ -336,7 +336,7 @@ export class LedgerKeyring extends EventEmitter {
       // Because tx will be immutable, first get a plain javascript object that
       // represents the transaction. Using txData here as it aligns with the
       // nomenclature of ethereumjs/tx.
-      const txData: TxData = tx.toJSON();
+      const txData = tx.toJSON();
       // The fromTxData utility expects a type to support transactions with a type other than 0
       txData.type = tx.type;
       // The fromTxData utility expects v,r and s to be hex prefixed
