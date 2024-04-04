@@ -68,7 +68,7 @@ const newFakeTx = TransactionFactory.fromTxData(
     value: '0x00',
     data: '0x7f7465737432000000000000000000000000000000000000000000000000000000600057',
   },
-  { common: common, freeze: false }
+  { common }
 );
 
 const fakeTypeTwoTx = TransactionFactory.fromTxData(
