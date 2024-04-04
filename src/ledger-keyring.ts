@@ -326,7 +326,7 @@ export class LedgerKeyring extends EventEmitter {
     // Note also that `getMessageToSign` will return valid RLP for all transaction types, whereas the
     // `serialize` method will not for any transaction type except legacy. This is because `serialize` includes
     // empty r, s and v values in the encoded rlp. This is why we use `getMessageToSign` here instead of `serialize`.
-    const messageToSign = tx.getMessageToSign(false);
+    const messageToSign = tx.getMessageToSign();
 
     rawTxHex = Buffer.isBuffer(messageToSign)
       ? messageToSign.toString('hex')
