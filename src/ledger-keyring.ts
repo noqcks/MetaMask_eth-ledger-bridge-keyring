@@ -308,7 +308,7 @@ export class LedgerKeyring extends EventEmitter {
       // @ts-expect-error tx.s should be a Buffer but we are assigning a string
       tx.s = '0x00';
 
-      rawTxHex = tx.serialize().toString('hex');
+      rawTxHex = tx.serialize().toString();
 
       return this.#signTransaction(address, rawTxHex, (payload) => {
         tx.v = Buffer.from(payload.v, 'hex');
