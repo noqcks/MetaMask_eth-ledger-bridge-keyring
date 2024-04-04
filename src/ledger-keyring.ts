@@ -599,7 +599,7 @@ export class LedgerKeyring extends EventEmitter {
     const dkey = this.hdk.derive(`${basePath}/${i}`);
     const address = ethUtil
       .publicToAddress(dkey.publicKey, true)
-      .toString('hex');
+      .toString();
     return ethUtil.toChecksumAddress(`0x${address}`);
   }
 
