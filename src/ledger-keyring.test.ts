@@ -1,6 +1,6 @@
 import { Common, Chain, Hardfork } from '@ethereumjs/common';
 import { RLP } from '@ethereumjs/rlp';
-import { TransactionFactory } from '@ethereumjs/tx';
+import { TransactionFactory, FeeMarketEIP1559Transaction } from '@ethereumjs/tx';
 import * as ethUtil from '@ethereumjs/util';
 import * as sigUtil from '@metamask/eth-sig-util';
 import EthereumTx from 'ethereumjs-tx';
