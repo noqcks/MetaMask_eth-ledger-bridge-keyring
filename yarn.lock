@@ -503,12 +503,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ethereumjs/rlp@npm:^4.0.0, @ethereumjs/rlp@npm:^4.0.1":
+"@ethereumjs/rlp@npm:^4.0.1":
   version: 4.0.1
   resolution: "@ethereumjs/rlp@npm:4.0.1"
   bin:
     rlp: bin/rlp
   checksum: 30db19c78faa2b6ff27275ab767646929207bb207f903f09eb3e4c273ce2738b45f3c82169ddacd67468b4f063d8d96035f2bf36f02b6b7e4d928eefe2e3ecbc
+  languageName: node
+  linkType: hard
+
+"@ethereumjs/rlp@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "@ethereumjs/rlp@npm:5.0.2"
+  bin:
+    rlp: bin/rlp.cjs
+  checksum: b569061ddb1f4cf56a82f7a677c735ba37f9e94e2bbaf567404beb9e2da7aa1f595e72fc12a17c61f7aec67fd5448443efe542967c685a2fe0ffc435793dcbab
   languageName: node
   linkType: hard
 
@@ -1596,7 +1605,7 @@ __metadata:
   resolution: "@metamask/eth-ledger-bridge-keyring@workspace:."
   dependencies:
     "@ethereumjs/common": ^3.1.1
-    "@ethereumjs/rlp": ^4.0.0
+    "@ethereumjs/rlp": ^5.0.2
     "@ethereumjs/tx": ^4.1.1
     "@ethereumjs/util": ^8.0.0
     "@lavamoat/allow-scripts": ^2.5.1
