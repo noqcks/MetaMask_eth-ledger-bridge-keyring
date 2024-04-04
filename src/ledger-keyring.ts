@@ -473,7 +473,7 @@ export class LedgerKeyring extends EventEmitter {
       message,
       types,
       SignTypedDataVersion.V4,
-    ).toString('hex');
+    ).toString();
 
     const hdPath = await this.unlockAccountByAddress(withAccount);
 
