@@ -467,7 +467,7 @@ export class LedgerKeyring extends EventEmitter {
       domain,
       types,
       SignTypedDataVersion.V4,
-    ).toString('hex');
+    ).toString();
     const hashStructMessageHex = TypedDataUtils.hashStruct(
       primaryType.toString(),
       message,
