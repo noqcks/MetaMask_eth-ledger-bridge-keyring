@@ -338,7 +338,7 @@ export class LedgerKeyring extends EventEmitter {
       // nomenclature of ethereumjs/tx.
       const txData = tx.toJSON();
       // The fromTxData utility expects a type to support transactions with a type other than 0
-      txData.type = tx.type;
+      txData.type = tx.type.toString();
       // The fromTxData utility expects v,r and s to be hex prefixed
       txData.v = ethUtil.addHexPrefix(payload.v);
       txData.r = ethUtil.addHexPrefix(payload.r);
